@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { ImagesSlider } from "../ui/images-slider";
+import Image from "next/image";
 
 export function ImagesSliderDemo() {
   const images = [
@@ -25,11 +26,15 @@ export function ImagesSliderDemo() {
         }}
         className="z-50 flex flex-col justify-center items-center">
         <motion.p
-          className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-          Derma Detect<br /> <span className="text-sm">An AI-powered platform for early detection and diagnosis of skin diseases</span>
+          className="font-bold text-xl md:text-6xl text-center w-full bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+          Derma Detect<br />
+          <div className="text-lg w-full md:w-1/2 mx-auto">
+            An AI-powered platform for early detection and diagnosis of skin diseases through image analysis, providing users with instant insights and recommendations. Empowering users to monitor their skin health by identifying potential skin conditions with the help of advanced image recognition technology.
+          </div>
         </motion.p>
+
         <button
-          className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+          className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-2">
           <span>Login</span>
           <div
             className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
