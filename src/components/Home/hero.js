@@ -27,7 +27,7 @@ export function ImagesSliderDemo() {
         className="z-50 flex flex-col justify-center items-center">
         <motion.p
           className="font-bold text-xl md:text-6xl text-center w-full bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-          Derma Detect<br />
+          DermaDetect<br />
           <div className="text-lg w-full md:w-1/2 mx-auto">
             An AI-powered platform for early detection and diagnosis of skin diseases through image analysis, providing users with instant insights and recommendations. Empowering users to monitor their skin health by identifying potential skin conditions with the help of advanced image recognition technology.
           </div>

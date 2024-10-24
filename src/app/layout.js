@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Derma Detect",
+  title: "DermaDetect",
   description: "A skin disease detection platform",
 };
 
