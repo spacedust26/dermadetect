@@ -30,11 +30,15 @@ const RegisterForm = () => {
           password,
         }),
       });
+      const data = await res.json();
       if (res.ok) {
         const form = e.target;
         form.reset();
+      }
+      else if (data.message === "Email already exists.") {
+        setError("Email already exists. Please use a different email.");
       } else {
-        console.log("User registeration failed.");
+        setError("User registration failed.");
       }
     } catch (error) {
       console.log("Error dring registartion", error);
