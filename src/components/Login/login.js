@@ -6,7 +6,7 @@ import Link from 'next/link'
 const login = () => {
   return (
     <div className='grid place-items-center h-screen'>
-      <div className="shadow-lg p-5 rounded-lg border-t-4 border-[#308061]">
+      <div className="shadow-lg p-5 rounded-lg border-t-4 border-[#308061] w-full max-w-md">
         <h1 className='text-xl font-bold my-4'>Enter the details</h1>
         <form className='flex flex-col gap-3'>
           <Input type="email" placeholder="Enter your email" />
