@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { ImagesSlider } from "../ui/images-slider";
 import Image from "next/image";
+import Link from "next/link";
 
 export function ImagesSliderDemo() {
   const images = [
@@ -33,12 +34,14 @@ export function ImagesSliderDemo() {
           </div>
         </motion.p>
 
-        <button
-          className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-2">
-          <span>Login</span>
-          <div
-            className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
-        </button>
+        <Link href="/login">
+          <button
+            className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-2">
+            <span>Login</span>
+            <div
+              className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
+          </button>
+        </Link>
       </motion.div>
     </ImagesSlider>)
   );
