@@ -22,7 +22,7 @@ import { Button } from "./ui/button"
 // Menu items.
 const items = [
   { title: "Home", url: "/", icon: Home },
-  { title: "Inbox", url: "#", icon: Inbox },
+  { title: "Upload", url: "#", icon: Inbox },
   { title: "Calendar", url: "#", icon: Calendar },
   { title: "Search", url: "#", icon: Search },
   { title: "Settings", url: "#", icon: Settings },
@@ -77,7 +77,7 @@ export function AppSidebar() {
           </Avatar>
           <div className="flex flex-col">
             <span className="text-gray-800 dark:text-gray-200 font-medium">{session?.user?.name}</span>
-            <span className="text-sm text-gray-500 dark:text-gray-400">{session?.user?.email}</span>
+            <span className="text-sm text-gray-500 dark:text-gray-400 truncate max-w-[150px]">{session?.user?.email}</span>
           </div>
         </SidebarMenuItem>
       </SidebarFooter>
