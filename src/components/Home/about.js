@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="flex flex-col items-center justify-center p-2 md:flex-row md:p-8">
+    <div className="flex flex-col items-center justify-center p-2 md:flex-row md:p-8" id="about">
       <div className="flex flex-col justify-start p-4 md:w-2/3">
         <h2 className="my-2 text-3xl font-bold">About Us</h2>
         <p className="text-[hsl(var(--foreground))]">
