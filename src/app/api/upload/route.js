@@ -27,7 +27,7 @@ export default async (req, res) => {
         formData.append('file', fs.createReadStream(imagePath));
 
         // Send the image to the target website's API
-        const response = await axios.post('https://target-website.com/api/upload', formData, {
+        const response = await axios.post('http://skin.test.woza.work/api/upload', formData, {
           headers: {
             ...formData.getHeaders(), // Attach proper headers for multipart/form-data
           },
