@@ -1,6 +1,6 @@
 import React from 'react'
 import Sidebar from '@/components/Dashboard/Sidebar'
-import { FileUploadDemo } from '@/components/Dashboard/Upload'
+import FileUploadDemo from '@/components/Dashboard/Upload'
 import Info from '@/components/Dashboard/Info'
 import { History } from '@/components/Dashboard/History'
 
@@ -12,7 +12,7 @@ const Dashboard = () => {
       </div>
       <div className="flex-1 p-6">
         <FileUploadDemo />
-        <Info />
+        {/* <Info /> */}
         <History />
       </div>
     </div>
